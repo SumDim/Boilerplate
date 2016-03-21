@@ -1,4 +1,4 @@
-# INT-WAW
+# INT-WAW SS2016
 
 Boilerplate fuer das Projekt. Dieses Projekt muss geforked werden,
 Meilensteinabgabe wird realisiert via Pull Request.
