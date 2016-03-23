@@ -1,0 +1,79 @@
+[33mcommit 0b93b6c83a72a5aea69a47f84303c8025c2a3a72[m
+Author: Sai-Kam Alounlasy <saikam@hotmail.de>
+Date:   Mon Mar 21 17:48:02 2016 +0100
+
+    Update Readme.md
+    
+    Teste ein commit
+
+[33mcommit ff5dcf89a6b9f2f10d15305ca63ee5e227120338[m
+Author: Cookie Engineer <cookiengineer@protonmail.ch>
+Date:   Mon Mar 21 13:42:04 2016 +0100
+
+    :book: Added source for overview chart
+
+[33mcommit 70b1deb5e1de40de8282e74aff984d0761915d39[m
+Author: Cookie Engineer <cookiengineer@protonmail.ch>
+Date:   Mon Mar 21 13:39:15 2016 +0100
+
+    :book: Testate
+
+[33mcommit 23f7a38443b317c4432c02b60ef569dd6c573d5b[m
+Author: Cookie Engineer <cookiengineer@protonmail.ch>
+Date:   Mon Mar 21 13:26:01 2016 +0100
+
+    :shit: Well...
+
+[33mcommit bb8f7cfcf2e7cf967299835fb2c86fa00dfabfa0[m
+Author: Cookie Engineer <cookiengineer@protonmail.ch>
+Date:   Mon Mar 21 13:24:21 2016 +0100
+
+    :book: :shit: github does not support SVG
+
+[33mcommit 6a0a4009d4c56d9cf272505dd507ca5522a5a68b[m
+Author: Cookie Engineer <cookiengineer@protonmail.ch>
+Date:   Mon Mar 21 13:22:26 2016 +0100
+
+    :recycle: Initial commit
+
+[33mcommit 63bb0b94bb553d2aa2ed206b223e214ad8bf3c25[m
+Author: Cookie Engineer <cookiengineer@protonmail.ch>
+Date:   Wed Mar 16 11:43:21 2016 +0100
+
+    :bug: Fix
+
+[33mcommit 573dc2c8c7b6cec1740fa3918e82ae9f065239b7[m
+Author: Cookie Engineer <cookiengineer@protonmail.ch>
+Date:   Wed Mar 16 11:36:33 2016 +0100
+
+    :snowflake: Code Preview
+
+[33mcommit b8e4ec1933a5eaa0d918f2e1dc92089228f44b75[m
+Author: Cookie Engineer <cookiengineer@protonmail.ch>
+Date:   Wed Mar 16 03:02:49 2016 +0100
+
+    :book: README
+
+[33mcommit 3baf902fda6be907fb3507b88161cd636da0a60c[m
+Author: Cookie Engineer <cookiengineer@protonmail.ch>
+Date:   Wed Mar 16 03:00:04 2016 +0100
+
+    :rocket: Slides for Workflow
+
+[33mcommit 17a42c4632ef1e9f1a218543cfc875984e8d69ae[m
+Author: Cookie Engineer <cookiengineer@protonmail.ch>
+Date:   Wed Mar 16 01:51:41 2016 +0100
+
+    :rocket: HTML5 slides
+
+[33mcommit 52f5d844de3d45c891a5c49980bff7860531bd9a[m
+Author: Cookie Engineer <cookiengineer@protonmail.ch>
+Date:   Tue Mar 15 22:42:34 2016 +0100
+
+    :recycle: Refactor because Reveal structure sucks
+
+[33mcommit 2a5dee8c3321472f54397c3f552fd5387832cb13[m
+Author: Cookie Engineer <cookiengineer@protonmail.ch>
+Date:   Wed Mar 9 12:52:41 2016 +0100
+
+    :sparkles: Initial commit
