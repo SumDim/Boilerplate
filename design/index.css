@@ -1,0 +1,30 @@
+#sidemenu{
+    position:fixed;
+    float:left;
+}
+#main{
+    float: right;
+    margin-right: 60%;
+
+}
+#status-overview,thead,tbody,th,tr,td{
+    border: 1px solid;
+    border-collapse: collapse;
+}
+thead{
+    background-color: cornflowerblue;
+}
+a:hover{
+    color:darkviolet;
+}
+
+a:active{
+    color:red;
+}
+a:link{
+    color:olivedrab;
+}
+
+html{
+    background: cadetblue;
+}
