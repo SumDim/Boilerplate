@@ -1,0 +1,21 @@
+#menu{
+  position:fixed;
+  align-content:left;
+
+}
+
+#main{
+  position:absolute;
+  overflow:auto;
+  align-content:right;
+}
+
+body{
+  background-color: green;
+}
+
+
+
+a:hover{
+  background-color: yellow;
+}

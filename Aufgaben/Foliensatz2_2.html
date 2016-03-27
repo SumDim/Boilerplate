@@ -1,0 +1,64 @@
+<!--AUFGABE
+1.Mache den Inhalt [Tab]-bar und fuege Shortcuts hinzu
+- mit dem attribut tabindex="" kann man die Reihenfolge bestimmen, Wenn man die Tab-Taste betätigt
+- accesskey="" sind shortcuts die man mit alt+shortkey ausführt aber Achtung shortkey darf nicht schon von standard Browser besetzt sein!
+
+2. Mache den Inhalt editierbar
+- mit dem attribut contenteditable="true" ist es möglich die betreffende Zeile zu editieren vom Browser aus
+3. Optional: Erstelle ein Kontextmenu (Rechtsklick)
+- <menu type="context"> erzeugt eine leere list die mit <menuitem label="angezeigte Begriffe" onclick=""> den Elementen in der liste bei
+	Rechtsklick im gewünschten Bereich angezeigt werden. (funktionier nur im Browser Mozialler firefox)
+
+-->
+<!DOCTYPE html>
+<html>
+	<head></head>
+		<body>
+			<header></header>
+				<aside></aside>
+						<menu type="context" id="mymenu">
+								<ol>
+										<li tabindex="3"  ><a href="https://www.facebook.com/" accesskey="k">Facebook</a></li>
+										<li tabindex="2" ><a href="https://github.com/" accesskey="g">Github</a></li>
+										<li tabindex="1"><a href="https://www.google.de/"  accesskey="o">Google</a></li>
+										<li tabindex="4" ><a href="http://www.msn.com/de-de" accesskey="m">Msn</a></li>
+								</ol>
+								<br/>
+
+								<p>Right-click inside this box to see the context menu!
+								<menuitem label="Google1" onclick="" icon=""></menuitem>
+								<menuitem label="MSN" icon="" onclick=""></menuitem>
+								<menuitem label="Facebook" icon="" onclick=""></menuitem>
+
+
+									<article>
+										<p contenteditable="true">In diesem Abschnitt versuche ich den Inhalt editierbar zu machen</p>
+										<p>nachdem soll ein Kontextmenü erstellt werden</p>
+										<p></p>
+									</article>
+							<section></section>
+
+
+
+
+
+
+								<table border="1">
+									<thead>
+										<tr>
+											<th>hallo</th>
+										</tr>
+									</thead>
+
+									<tbody>
+										<tr>
+											<td>HTML5</td>
+										</tr>
+									</tbody>
+								</table>
+						</menu>
+
+
+				<footer></footer>
+		</body>
+</html>

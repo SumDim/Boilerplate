@@ -1,0 +1,63 @@
+<!--
+
+overflow:Legt fest, wie ein Bereich oder ein Element, der innerhalb eines anderen Elements definiert wird,
+angezeigt werden soll,wenn der Inhalt des inneren Elements zu groß ist.
+Wenn z.B. ein Bereich innerhalb eines <DIV>-Bereichs festgelegt wird und dieser größer ist,
+als die Abmessungen des <DIV>-Bereichs oder durch eine Positionierung über den Rand läuft.
+
+AUFGABE
+1. Baue das menu mit position:fixed linksbuendig
+2. Baue die main (Inhalt) mit position:absolute rechtsbuendig
+3. Setze overflow:auto auf die main und erklaere den Unterschied
+4. Optional: Passe die Farben im Menu an ( auch fuer a:hover )
+Note: :hover MUST come after :link and :visited (if they are present) in the CSS definition, in order to be effective!
+
+
+punkt 1,2,3,4 nochmal nachfragen!
+-->
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="Foliensatz3_3.css"/>
+	</head>
+		<body>
+      <header></header>
+
+
+      <menu id="menu">
+        <ol>
+          <li><a href="#status">Status</a></li>
+          <li><a href="#tasks">Tasks</a></li>
+          <li><a href="#status-overview">Tabellen-Übersicht</a></li>
+        </ol>
+
+      </menu>
+
+
+
+      <main id="main">
+          <section id="status">
+            <h1>Status</h1>
+            <p>The World Wide Fund for Nature (WWF) is an international organization working on issues regarding the conservation, research and restoration of the environment, formerly named the World Wildlife Fund. WWF was founded in 1961.</p>
+          </section>
+          <section id="tasks">
+            <h1>Tasks</h1>
+            <p>The Panda has become the symbol of WWF. The well-known panda logo of WWF originated from a panda named Chi Chi that was transferred from the Beijing Zoo to the London Zoo in the same year of the establishment of WWF.</p>
+          </section>
+      </main>
+
+      <table id="status-overview">
+          <theader>
+            <tr>
+                <th></th>
+            </tr>
+          </theader>
+          <tbody>
+            <tr>
+              <td></td>
+            </tr>
+          </tbody>
+      </table>
+		</body>
+</html>
