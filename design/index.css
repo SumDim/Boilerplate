@@ -1,19 +1,26 @@
 #sidemenu{
     position:fixed;
-    float:left;
+    left: 0;
+    width: 150px;
+    padding: 10px;
 }
-#main{
-    float: right;
-    margin-right: 60%;
 
+#main{
+    position: absolute;
+    right: 0;
+    width: 50%;
+    padding: 10px;
 }
+
 #status-overview,thead,tbody,th,tr,td{
     border: 1px solid;
     border-collapse: collapse;
 }
+
 thead{
     background-color: cornflowerblue;
 }
+
 a:hover{
     color:darkviolet;
 }
@@ -21,6 +28,7 @@ a:hover{
 a:active{
     color:red;
 }
+
 a:link{
     color:olivedrab;
 }
