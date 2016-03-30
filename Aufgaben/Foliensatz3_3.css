@@ -1,13 +1,13 @@
 #menu{
   position:fixed;
-  align-content:left;
+  text-align: left;
 
 }
 
 #main{
   position:absolute;
   overflow:auto;
-  align-content:right;
+  text-align: right;
 }
 
 body{

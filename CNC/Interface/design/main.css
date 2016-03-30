@@ -1,0 +1,43 @@
+button {
+       background: white;
+       web-transition: background 1.5s;
+}
+
+button:hover {
+        background: red;
+}
+
+a:active{
+  background-color: yellow;
+}
+a:hover{
+background-color: green;
+}
+
+body{
+     background-color: red;
+     transition-property: background-color;
+     transition-duration: 1.5s;
+
+}
+body:hover{
+  background-color: blue;
+}
+
+menu{
+    position: fixed;;
+    left: 0px;
+    width: 300px;
+    border: 3px solid #black;
+    padding: 10px;
+}
+
+main{
+  position: fixed;
+  right: 0px;
+  width: 300px;
+  border: 3px solid #black;
+  padding: 10px;
+
+
+}

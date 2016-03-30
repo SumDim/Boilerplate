@@ -1,45 +1,64 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
+
 <head>
-	<title>CNC Interface</title>
-	<link rel="stylesheet" href="./design/index.css">
-	<link rel="stylesheet" media="print" href="./design/print.css">
+    <meta charset="UTF-8">
+    <title>Meilenstein1</title>
+    <meta name="description" content="Interface">
+    <meta name="author" content="Sai-Kam Alounlasy">
+    <meta http-equiv="refresh" content="300">
+    <link href="main.css" type="text/css" rel="stylesheet">
+
+
+<script type="text/javascript">
+        // Beim Seitenaufruf wird die Funktion ausgefuehrt.
+        window.onload = function () {
+          var xhr = new XMLHttpRequest();
+                xhr.open('GET', 'http://botnet.artificial.engineering/api/Status', true);
+                xhr.responseType = 'document';
+
+xhr.send();
+};
+
+
+
+</script>
+
 </head>
+
 <body>
+<h1>Status-Tabelle</h1>
+<!--Sortierung nach Workload, IP, Auftrag und Aktiv/Inaktiv???-->
 
-	<header>
-		<h1>CNC Interface</h1>
-	</header>
+<!--
+trasnsition:
+http://www.pepe-juergens.de/2013/01/css3-transitions-hover-effekte/#defenieren
+-->
 
-	<aside>
-		<menu>
-			<li><a href="#status">Status</a></li>
-			<li><a href="#tasks">Tasks</a></li>
-		</menu>
-	</aside>
+<table border="1">
+  <thead>
+    <tr>
+      <th>Workload</th>
+      <th>IP</th>
+      <th>Auftrag (ID)</th>
+      <th>Stop/Start Button</th>
+    </tr>
+  </thead>
 
-	<main>
-		<section id="status">
-			<table id="status-overview">
-				<thead>
-					<tr>
-						<th>Workload</th>
-						<th>IP</th>
-						<th>Task</th>
-						<th>Status</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td colspan="4">No BOTS active yet :(</td>
-					</tr>
-				</tbody>
-			</table>
-		</section>
-		<section id="tasks">
-			TODO: Task Section
-		</section>
-	</main>
+  <tbody>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td><button class="button"> test button</button></td>
+    </tr>
+
+  </tbody>
+
+
+</table>
+
+
 
 </body>
 </html>
