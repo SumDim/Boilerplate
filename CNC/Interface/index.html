@@ -7,20 +7,28 @@
     <meta name="description" content="Interface">
     <meta name="author" content="Sai-Kam Alounlasy">
     <meta http-equiv="refresh" content="300">
-    <link href="main.css" type="text/css" rel="stylesheet">
+    <link href="design/main.css" type="text/css" rel="stylesheet">
 
 
-<script type="text/javascript">
-        // Beim Seitenaufruf wird die Funktion ausgefuehrt.
-        window.onload = function () {
-          var xhr = new XMLHttpRequest();
-                xhr.open('GET', 'http://botnet.artificial.engineering/api/Status', true);
-                xhr.responseType = 'document';
+
+<scripts>
+
+window.onload = function () {
+
+alert("test");
+
+var xhr = new XMLHttpRequest();
+xhr.open('GET', 'http://botnet.artificial.engineering:8080/api/Status', true);
+xhr.responseType = 'document';
+
+xhr.onload = function(e) {
+  if (this.status == 200) {
+    var document = this.response;
+  }
+}
 
 xhr.send();
-};
-
-
+}
 
 </script>
 
@@ -34,7 +42,15 @@ xhr.send();
 trasnsition:
 http://www.pepe-juergens.de/2013/01/css3-transitions-hover-effekte/#defenieren
 -->
+<aside id="sidebar-menu">
+  <ol>
+    <li><a href="">Link1</a></li>
+    <li><a href="">Link2</a></li>
+  </ol>
+</aside>
 
+
+<main id="main">
 <table border="1">
   <thead>
     <tr>
@@ -52,12 +68,9 @@ http://www.pepe-juergens.de/2013/01/css3-transitions-hover-effekte/#defenieren
       <td></td>
       <td><button class="button"> test button</button></td>
     </tr>
-
   </tbody>
-
-
 </table>
-
+<main>
 
 
 </body>

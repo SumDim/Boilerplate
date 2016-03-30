@@ -7,13 +7,6 @@ button:hover {
         background: red;
 }
 
-a:active{
-  background-color: yellow;
-}
-a:hover{
-background-color: green;
-}
-
 body{
      background-color: red;
      transition-property: background-color;
@@ -24,7 +17,14 @@ body:hover{
   background-color: blue;
 }
 
-menu{
+a:active{
+  background-color: yellow;
+}
+a:hover{
+background-color: red;
+}
+
+#sidebar-menu{
     position: fixed;;
     left: 0px;
     width: 300px;
@@ -32,12 +32,10 @@ menu{
     padding: 10px;
 }
 
-main{
+#main{
   position: fixed;
   right: 0px;
   width: 300px;
   border: 3px solid #black;
   padding: 10px;
-
-
 }
