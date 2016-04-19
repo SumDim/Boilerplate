@@ -1,15 +1,20 @@
 #sidemenu{
+    display:inline;
     position:fixed;
     left: 0;
-    width: 150px;
-    padding: 10px;
+    width: 20%;
+    height:auto;
 }
 
 #main{
-    position: absolute;
-    right: 0;
-    width: 50%;
-    padding: 10px;
+    position: absolute;;
+    display:inline;
+    right: 0px;
+    width: 80%;
+
+
+
+
 }
 
 #status-overview,thead,tbody,th,tr,td{
@@ -22,7 +27,7 @@ thead{
 }
 
 a:hover{
-    color:darkviolet;
+    color:orange;
 }
 
 a:active{
@@ -34,5 +39,7 @@ a:link{
 }
 
 html{
-    background: cadetblue;
+    background-image: url("http://newflowerwallpaper.com/download/lotus-flower-images-and-wallpapers/lotus-flower-images-and-wallpapers-11.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
