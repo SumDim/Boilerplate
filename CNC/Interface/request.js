@@ -9,46 +9,45 @@ readyState	Holds the status of the XMLHttpRequest. Changes from 0 to 4:
 4: request finished and response is ready
 status	200: "OK"
 404: Page not found
+
 */
-<script>
+
+var initialize = function() {
 
 var xhr = new XMLHttpRequest();
-var content = document.QuerySelector('#status-tbody');
 
-xhr.open('GET', 'http://botnet.artificial.engineering/api/Status', true);
+xhr.open('GET', 'http://botnet.artificial.engineering:8080/api/Status', true);
 xhr.responseType = 'json';
+xhr.send();
+xhr.onload = function(){
 
-xhr.onlaod = function(){
+      if (xhr.readyState == 4 && xhr.status == 200) {
+        var content = document.querySelector('#status-tbody');
+        var data = xhr.response;
+            if(data instanceof Array){
+              var code = '';
 
-  xhr.onreadystatechange = function() {
-    if (xhttp.readyState == 4 && xhttp.status == 200) {
-      var data = xhr.response;
-          if(data instanceof Array){
+                  for(var d = 0, dl = data.length; d<dl; d++){
 
-            var code = '';
+                    var entry = data[d];
 
-                for(var d = 0, dl = data.length; d<dl; d++){
+                    code = code + '<tr>';
+                    code = code + '<td>' + entry.id + '</td>';
+                    code = code + '<td>' + entry.ip + '</td>';
+                    code = code + '<td>' + entry.task + '</td>';
+                    code = code + '<td>' + entry.workload + '</td>';
+                    code = code + '</tr>';
 
-                  var entry = data[d];
+                    console.log(data[d]);
+                  }
+              content.innerHTML = code;
+            }else {
+              content.innerHTML ='Failed to load -.-';
+            }
 
-                  code = code + '<tr>';
-                  code = code + '<td>' + entry.id + '</td>';
-                  code = code + '<td>' + entry.ip + '</td>';
-                  code = code + '<td>' + entry.task + '</td>';
-                  code = code + '<td>' + entry.workload + '</td>';
-                  code = code + '</tr>';
+      }
 
-                  console.log(data[d]);
-                }
-            content.innerHTML = code;
-          }else {
-            content.innerHTML ='Failed to load -.-';
-          }
-
-    }
 
 };
 
-xhr.send(null);
-
-</script>
+};
