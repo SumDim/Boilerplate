@@ -9,18 +9,16 @@ readyState	Holds the status of the XMLHttpRequest. Changes from 0 to 4:
 4: request finished and response is ready
 status	200: "OK"
 404: Page not found
-
 */
+var table_reload_interval;
 
 var initialize = function() {
-
 var xhr = new XMLHttpRequest();
 
 xhr.open('GET', 'http://botnet.artificial.engineering:8080/api/Status', true);
 xhr.responseType = 'json';
 xhr.send();
 xhr.onload = function(){
-
       if (xhr.readyState == 4 && xhr.status == 200) {
         var content = document.querySelector('#status-tbody');
         var data = xhr.response;
@@ -28,14 +26,14 @@ xhr.onload = function(){
               var code = '';
 
                   for(var d = 0, dl = data.length; d<dl; d++){
-
                     var entry = data[d];
-
                     code = code + '<tr>';
-                    code = code + '<td>' + entry.id + '</td>';
-                    code = code + '<td>' + entry.ip + '</td>';
-                    code = code + '<td>' + entry.task + '</td>';
-                    code = code + '<td>' + entry.workload + '</td>';
+                    code = code + '<td class="spalten">' + entry.workload + '</td>';
+                    code = code + '<td class="spalten">' + entry.ip + '</td>';
+                    code = code + '<td class="spalten">' + entry.id + '</td>';
+                    //code + '<td>' + entry.task + '</td>';
+                    code = code + '<td class="table_button_spalten">' + '<button type="button" class="button_stop">'+'Stop!'+'</button>'+'<button type="button" class"button_start">'+'Start!'+'</button>'+ '</td>';
+
                     code = code + '</tr>';
 
                     console.log(data[d]);
@@ -47,7 +45,11 @@ xhr.onload = function(){
 
       }
 
-
+};
+table_reload_interval=setInterval(function(){alert('repeat');, 3000);
 };
 
-};
+
+function stop_table_interval_reload() {
+    clearTimeout(table_reload_interval);
+}

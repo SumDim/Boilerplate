@@ -25,19 +25,19 @@
 <aside id="sidemenu">
     <menu>
         <li><a href="#status" onclick=initialize();>Status</a></li>
-        <li><a href="#tasks">Tasks</a></li>
+        <li><a href="#tasks" onclick=stop_table_interval_reload();>Tasks</a></li>
     </menu>
 </aside>
 
 <main id="main">
     <section id="status">
         <table id="status-overview">
-            <thead>
+            <thead id="status-header">
             <tr>
-                <td>Workload</td>
-                <td>IP</td>
-                <td>Auftrag (ID)</td>
-                <td>Stop/Start Button</td>
+                <th>Workload</th>
+                <th>IP</th>
+                <th>Auftrag (ID)</th>
+                <th>Stop/Start</th>
             </tr>
             </thead>
 
